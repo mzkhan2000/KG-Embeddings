@@ -64,6 +64,12 @@ def make_unique_gaThemes(list_all_ga_themes):
 
 ```python
 
+code here
+
+```
+
+```python
+
 # to get all the ga-themes
 ga_record_datapath = "/content/drive/My Drive/MonirResearchDatasets/surround-ga-records/ga-records.ttl"
 gaThemes = gaThemesExtraction(ga_record_datapath)
@@ -78,5 +84,11 @@ print(len(gaThemes))
 unique_gaThemes, duplicate_gaThemes = make_unique_gaThemes(gaThemes)
 print(unique_gaThemes[:100])
 #print(duplicate_gaThemes[:100])
+
+```
+
+```python
+
+code here
 
 ```
