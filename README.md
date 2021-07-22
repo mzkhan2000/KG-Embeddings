@@ -93,7 +93,7 @@ def embedding_main:
     # Read text file for embedding such as ‘Gravity_DBpedia.txt’ file
     file_path = "/content/drive/My Drive/MonirResearchDatasets/Gravity_DBpedia.txt"
     
-    def input_text_file(file_path)
+    input_text_file(file_path)
     preprocessed_text = word_drop(text)
     text_to_token = word_tokenize(preprocessed_text)
     create_embedding_model(text_to_token)
