@@ -17,6 +17,8 @@ warnings.filterwarnings(action = 'ignore')
 
 import gensim
 from gensim.models import Word2Vec
+from gensim.models import KeyedVectors
+from gensim.scripts.glove2word2vec import glove2word2vec
 
 import numpy
 import multiprocessing
