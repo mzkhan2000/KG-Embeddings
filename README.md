@@ -1,4 +1,4 @@
-# KG-Embeddings
+# Text-Embeddings
 
 ```python
 # Python program to generate embedding (word vectors) using Word2Vec
@@ -99,6 +99,7 @@ def embedding_main:
     embedding_model = create_embedding_model(text_to_token)
 
 ```
+# KG-Embeddings
 
 ```python
 Code here............
