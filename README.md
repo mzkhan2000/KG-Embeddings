@@ -38,6 +38,11 @@ def word_drop(text):
 ```
 
 ```python
+# Replaces escape character with space
+f = s.replace("\n", " ")
+```
+
+```python
 
 # define a function to tokenize the sentence into words/ Monir
 def word_tokenize(text):
