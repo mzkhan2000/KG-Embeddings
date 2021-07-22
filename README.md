@@ -71,13 +71,24 @@ drive.mount('/content/drive')
 
 ```python
 
-# to get all the ga-themes
+# to get all the ga-themes from ga-records.ttl file
 ga_record_datapath = "/content/drive/My Drive/MonirResearchDatasets/surround-ga-records/ga-records.ttl"
 gaThemes = gaThemesExtraction(ga_record_datapath)
 print(gaThemes[:10])
 print(len(gaThemes))
 
 ```
+
+```python
+
+# to get all the ga-themes from all1K file 
+ga_record_datapath = "/content/drive/My Drive/MonirResearchDatasets/surround-ga-records/all1k.ttl.txt"
+gaThemes = gaThemesExtraction(ga_record_datapath)
+print(gaThemes[:10])
+print(len(gaThemes))
+
+```
+
 
 ```python
 
@@ -88,8 +99,4 @@ print(unique_gaThemes[:100])
 
 ```
 
-```python
 
-code here
-
-```
