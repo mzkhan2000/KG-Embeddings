@@ -96,6 +96,7 @@ print(len(gaThemes))
 unique_gaThemes, duplicate_gaThemes = make_unique_gaThemes(gaThemes)
 print(unique_gaThemes[:100])
 #print(duplicate_gaThemes[:100])
+print(len(unique_gaThemes))
 
 ```
 
