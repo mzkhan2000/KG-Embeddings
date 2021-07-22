@@ -1,5 +1,16 @@
 # KG-Embeddings
 
+```python
+
+pip install rdflib
+import rdflib
+```
+
+```python
+
+import collections
+from collections import Counter
+```
 
 ```python
 # a funtion for ga-themes extraction from GA-rdf repository separate and return a list all the ga-themes - Monir
