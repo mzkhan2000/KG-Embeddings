@@ -8,6 +8,18 @@ import rdflib
 
 ```python
 
+from rdflib import Graph
+
+g = Graph()
+g.parse("/content/drive/My Drive/MonirResearchDatasets/surround-ga-records/ga-records.ttl", format='turtle')
+
+print(len(g))
+
+```
+
+
+```python
+
 import collections
 from collections import Counter
 ```
