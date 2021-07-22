@@ -96,6 +96,7 @@ def embedding_main:
     def input_text_file(file_path)
     preprocessed_text = word_drop(text)
     text_to_token = word_tokenize(preprocessed_text)
+    create_embedding_model(text_to_token)
 
 ```
 
