@@ -23,6 +23,19 @@ import re, string # using to remove regular expression, special characters in tx
 
 ```python
 
+# Read text file for embedding such as ‘Gravity_DBpedia.txt’ file
+def input_text_file(file_path):   
+   
+   # Read text file
+   sample = open(file_path, "r")
+   s = sample.read()
+
+   # Replaces escape character with space
+   text = s.replace("\n", " ")
+   return text
+```
+
+```python
 # define a function for removing unnecessary/special characters and return a lower case plain texts/ Monir
 def word_drop(text):
     text = text.lower()
