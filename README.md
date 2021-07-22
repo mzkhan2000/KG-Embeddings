@@ -15,6 +15,22 @@ from gensim.models import Word2Vec
 import re, string # using to remove regular expression, special characters in txt files
 ```
 
+```python
+
+# define a function for removing unnecessary/special characters and return a lower case plain texts/ Monir
+def word_drop(text):
+    text = text.lower()
+    text = re.sub('\[.*?\]', '', text)
+    text = re.sub("\\W", " ", text)
+    text = re.sub('https?://\S+ |www\.\S+', '', text)
+    text = re.sub('<.*?>', '', text)
+    text = re.sub('[%s]' % re.escape(string.punctuation), '', text)
+    text = re.sub('\n', '', text)
+    text = re.sub('\w*\d\w*', '', text)
+    return text
+
+```
+ 
 # GA-themes extraction
 
 ```python
