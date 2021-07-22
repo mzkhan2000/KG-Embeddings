@@ -81,9 +81,8 @@ def embedding_main:
     
     # Read text file for embedding such as ‘Gravity_DBpedia.txt’ file
     file_path = "/content/drive/My Drive/MonirResearchDatasets/Gravity_DBpedia.txt"
-    sample = open(finel_path, "r")
-    s = sample.read()
     
+    def input_text_file(file_path)
     preprocessed_text = word_drop(text)
     text_to_token = word_tokenize(preprocessed_text)
 
