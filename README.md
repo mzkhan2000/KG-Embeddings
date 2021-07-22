@@ -18,6 +18,8 @@ warnings.filterwarnings(action = 'ignore')
 import gensim
 from gensim.models import Word2Vec
 
+import numpy
+import multiprocessing
 import re, string # using to remove regular expression, special characters in txt files
 ```
 
