@@ -107,23 +107,24 @@ def embedding_main:
 
 ```python
 
-def embedding_word_clusters(model, list_of_ga_themes):
+def embedding_word_clusters(model, list_of_ga_themes, cluster_size):
   keys = list_of_ga_themes
   GoogleNews_model = model
+  n = cluster_size
 
   embedding_clusters = []
   word_clusters = []
   for word in keys:
       embeddings = []
       words = []
-      for similar_word, _ in GoogleNews_model.most_similar(word, topn=30):
+      for similar_word, _ in GoogleNews_model.most_similar(word, topn=n):
           words.append(similar_word)
           embeddings.append(GoogleNews_model[similar_word])
       embedding_clusters.append(embeddings)
       word_clusters.append(words)
 
   return embedding_clusters, word_clusters
-
+  
 ```
 
 ```python
