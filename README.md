@@ -63,8 +63,9 @@ def make_unique_gaThemes(list_all_ga_themes):
 ```
 
 ```python
-
-code here
+# to connect to Google drive
+from google.colab import drive
+drive.mount('/content/drive')
 
 ```
 
