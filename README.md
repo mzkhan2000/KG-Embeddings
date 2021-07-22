@@ -74,6 +74,17 @@ def word_tokenize(text):
     
 ```
 
+```python
+
+# Create CBOW model
+def CBOW_model(data): 
+
+  # Create CBOW Word2Ve model
+  embedding_model = gensim.models.Word2Vec(data, min_count = 1, vector_size = 300, window = 10)
+
+  return embedding_model
+
+```
 
 ```python
 
