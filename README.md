@@ -11,6 +11,8 @@ nltk.download('punkt')
 
 import gensim
 from gensim.models import Word2Vec
+
+import re, string # using to remove regular expression, special characters in txt files
 ```
 
 # GA-themes extraction
