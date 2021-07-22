@@ -30,7 +30,30 @@ def word_drop(text):
     return text
 
 ```
- 
+
+```python
+
+# define a function to tokenize the sentence into words/ Monir
+def word_tokenize(text):
+    data = []
+
+    # iterate through each sentence in the file
+    for i in sent_tokenize(f):
+        temp = []
+
+        # tokenize the sentence into words
+        for j in word_tokenize(i):
+            temp.append(j.lower())
+
+        data.append(temp)
+    return data
+    
+```
+
+```python
+Code here............
+```
+
 # GA-themes extraction
 
 ```python
