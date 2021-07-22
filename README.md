@@ -59,8 +59,10 @@ def word_tokenize(text):
 
 ```python
 
-preprocessed_text = word_drop(text)
-text_to_token = word_tokenize(preprocessed_text)
+def embedding_main:
+    
+    preprocessed_text = word_drop(text)
+    text_to_token = word_tokenize(preprocessed_text)
 
 ```
 
