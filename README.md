@@ -31,7 +31,7 @@ def gaThemesExtraction(ga_record):
   #print(len(gaThemes))
   return gaThemes
 
-
+# to get all the ga-themes
 ga_record_datapath = "/content/drive/My Drive/MonirResearchDatasets/surround-ga-records/ga-records.ttl"
 gaThemes = gaThemesExtraction(ga_record_datapath)
 print(gaThemes[:10])
