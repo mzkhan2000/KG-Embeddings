@@ -1,6 +1,20 @@
 # KG-Embeddings
 
 ```python
+# Python program to generate embedding (word vectors) using Word2Vec
+
+# importing necessary modules for embedding
+pip install --upgrade gensim
+
+import nltk
+nltk.download('punkt')
+
+import gensim
+from gensim.models import Word2Vec
+```
+
+
+```python
 
 pip install rdflib
 import rdflib
