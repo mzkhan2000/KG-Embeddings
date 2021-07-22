@@ -54,5 +54,8 @@ def make_unique_gaThemes(list_all_ga_themes):
 
   return unique_gaThemes, duplicate_gaThemes
   
-  
+# to get all unique ga-themes
+unique_gaThemes, duplicate_gaThemes = make_unique_gaThemes(gaThemes)
+print(unique_gaThemes[:100])
+#print(duplicate_gaThemes[:100])
 ```
