@@ -38,3 +38,21 @@ print(gaThemes[:10])
 print(len(gaThemes))
 
 ```
+
+```python
+# a funtion imput a list of ga-themes and return a list of unique ga-themes and another list of duplicate gaThemes - 
+def make_unique_gaThemes(list_all_ga_themes):
+  # find a a list of unique ga-themes
+  unique_gaThemes = []
+  unique_gaThemes = list(dict.fromkeys(gaThemes))
+  #print(len(unique_gaThemes))
+
+  # a list of duplicate gaThemes
+  duplicate_gaThemes = []
+  duplicate_gaThemes = [item for item, count in collections.Counter(gaThemes).items() if count > 1]
+  #print(len(duplicate_gaThemes))
+
+  return unique_gaThemes, duplicate_gaThemes
+  
+  
+```
