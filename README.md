@@ -130,7 +130,7 @@ def embedding_word_clusters(model, list_of_ga_themes, cluster_size):
 
 ```python
 
-Code here............
+Code here..............
 
 ```
 
